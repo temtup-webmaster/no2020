@@ -14,7 +14,7 @@ body {
 /* Hero Section */
 .hero-section {
     height: 100vh;
-    background-image: url('../images/pachobackground.jpg');
+    background-image: url('../images/pachobackgroundvertical.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
