@@ -198,3 +198,12 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/* Cambiar imagen de fondo en móviles */
+@media (max-width: 768px) {
+  .hero-section {
+    background-image: url('../images/pachobackgroundvertical.jpg'); /* tu versión recortada */
+    background-position: center top; /* ajusta el enfoque */
+    background-size: cover; /* asegura que llene la pantalla */
+  }
+}
