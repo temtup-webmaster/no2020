@@ -199,11 +199,16 @@ body {
   height: 100%;
 }
 
-/* Cambiar imagen de fondo en móviles */
+/* Cambiar imagen de fondo en móviles - compatible con Safari */
 @media (max-width: 768px) {
   .hero-section {
-    background-image: url('../images/pachobackgroundvertical.jpg'); /* tu versión recortada */
-    background-position: center top; /* ajusta el enfoque */
-    background-size: cover; /* asegura que llene la pantalla */
+    background-image: url('../images/pachobackgroundvertical.jpg'); /* tu versión recortada para móvil */
+    -webkit-background-size: cover; /* Safari iOS */
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center; /* centra la imagen en móviles */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* corrige el bug de fondo fijo en Safari */
   }
 }
